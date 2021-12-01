@@ -1,0 +1,27 @@
+.contact{
+    background-image: url(../img/15.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .contact__item{
+        text-align: center;
+        color: $cl-white-0;
+        i{
+            font-size: $fs-3 + 1;
+        }
+        h2{
+            padding-top: $pd-3;
+            font-size: $fs-2;
+            letter-spacing: 1px;
+            margin-bottom: $mg-3;
+        }
+    }
+}
+@media screen and(max-width: 991.98px) {
+    .contact{
+        .contact__item{
+            margin-bottom: $mg-7;
+        }
+    }
+}

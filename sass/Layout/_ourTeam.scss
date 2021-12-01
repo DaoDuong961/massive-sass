@@ -1,0 +1,102 @@
+.ourTeam {
+    background-color: $cl-gray-3;
+    .ourTeam__item {
+        padding: 0 $pd-3;
+        .team-member {
+            position: relative;
+            overflow: hidden;
+            &:hover .team-hover{
+                opacity: 1;
+            }
+            .team-img {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            .team-intro {
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+                width: 70%;
+                padding: $pd-1 - 2 $pd-2;
+                text-align: right;
+                background: $cl-dark-4;
+                letter-spacing: 2px;
+                h5 {
+                    @include styleText($cl-white-0, $fs-0 + 1, $fw-0);
+                }
+                span {
+                    @include styleText($cl-white-2, $fs-0 - 1, $fw-0);
+                }
+            }
+            .team-hover {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                opacity: 0;
+                transition: all 0.4s;
+                border: 20px solid $cl-dark-6;
+                background-color: $cl-white-1;
+                .desk {
+                    position: absolute;
+                    top: -50%;
+                    width: 100%;
+                    padding: 0 $pd-2;
+                    transition: all 0.4s;
+                    transform: translateY(0%);
+                    h4 {
+                        margin-bottom: $mg-4;
+                        letter-spacing: 4px;
+                        @include styleText($cl-dark-3, $fs-1 - 1, $fw-0);
+                    }
+                    p {
+                        margin-bottom: 0;
+                        line-height: 30px;
+                        @include styleText($cl-gray-0, $fs-1 - 1, $fw-0);
+                    }
+                }
+                &:hover .desk {
+                    transform: translateY(140%);
+                }
+                .s-link{
+                    position: absolute;
+                    bottom: -15%;
+                    text-align: center;
+                    width: 100%;
+                    transition: all 0.4s;
+                    a{
+                        text-align: center;
+                        color: $cl-dark-3;
+                        margin: 0 $mg-1;
+                        font-size: $fs-2 - 2;
+                    }
+                }
+                &:hover .s-link{
+                    bottom: 7%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .ourTeam{
+        .ourTeam__item{
+            .team-member{
+                .team-img{
+                    margin-bottom: 20px;
+                }
+            }
+            &:nth-child(3){
+                .team-member{
+                    .team-img{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

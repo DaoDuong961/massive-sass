@@ -1,0 +1,20 @@
+.videoDemo {
+    padding-bottom: 40px;
+    .video {
+        padding: 0 $pd-3;
+        margin-left: 22%;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .container{
+        padding-left: 0;
+    }
+    .videoDemo{
+        .video{
+            margin-left: 0;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+}

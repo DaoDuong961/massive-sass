@@ -1,0 +1,29 @@
+.ourClient {
+    .ourClient__client {
+        .item {
+            .itemImg {
+                padding: $mg-3;
+                width: 16%;
+                display: inline-block;
+            }
+        }
+    }
+    .owl-theme {
+        .owl-nav.disabled + .owl-dots {
+            display: block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+        }
+        .owl-dots {
+            .owl-dot {
+                span {
+                    background-color: $cl-dark-14;
+                }
+            }
+            .owl-dot.active span {
+                background-color: $cl-gray-6;
+            }
+        }
+    }
+}

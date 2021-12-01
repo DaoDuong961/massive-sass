@@ -1,0 +1,47 @@
+.featureDesign {
+    .featureDesign__pad {
+        padding: 0 $pd-3;
+        .featureDesign__item {
+            padding: $pd-3;
+            position: relative;
+            border: 1px solid $cl-gray-1;
+            border-radius: $br-0;
+            .icon {
+                position: absolute;
+                top: -30px;
+                left: 30px;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                border-radius: $br-0;
+                background: $cl-dark-3;
+                box-shadow: 0 0 0 10px $cl-white-0;
+                line-height: 60px;
+                i {
+                    color: $cl-white-0;
+                    font-size: $fs-3 - 5;
+                    line-height: 60px;
+                }
+            }
+            .featureDesign__content {
+                h4 {
+                    margin-top: $mg-5;
+                    margin-bottom: $mg-3;
+                    letter-spacing: 1px;
+                    @include styleText($cl-dark-0, $fs-2, $fw-0);
+                }
+                p {
+                    color: $cl-gray-0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .featureDesign {
+        .featureDesign__pad {
+            margin-bottom: 50px;
+        }
+    }
+}

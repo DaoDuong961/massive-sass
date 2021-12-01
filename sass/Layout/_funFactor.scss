@@ -1,0 +1,60 @@
+.funFactor {
+    background-image: url(../img/7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $cl-white-0;
+    .funFactor__item {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        i {
+            font-size: $fs-3 + 1;
+            position: absolute;
+            top: 10px;
+        }
+        .funFactor__deception {
+            padding-left: $pd-7;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 75px;
+                width: 1px;
+                height: 80px;
+                content: "";
+                display: block;
+                background-color: $cl-white-4;
+                transform: rotate(30deg);
+            }
+            span {
+                font-size: $fs-3 + 1;
+                letter-spacing: 2px;
+            }
+            p {
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .funFactor {
+        .funFactor__pad {
+            padding: $pd-3 0;
+        }
+        .funFactor__item {
+            .funFactor__deception {
+                span {
+                    font-size: $fs-2 + 8;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 575.98px) {
+    .funFactor {
+        .funFactor__pad {
+            padding-left: $pd-5;
+        }
+    }
+}

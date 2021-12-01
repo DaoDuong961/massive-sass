@@ -1,0 +1,114 @@
+.skill {
+    overflow: hidden;
+    width: 100% !important;
+    height: 100%;
+    background-image: url("../img/4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    .skill__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 $pd-3;
+        text-align: center;
+        h3 {
+            font-size: $fs-2 + 6;
+            letter-spacing: 6px;
+            margin-bottom: 0;
+        }
+    }
+    .skill__left {
+        padding: 0 $pd-3;
+        h4 {
+            letter-spacing: 2px;
+            margin-bottom: $mg-5;
+            line-height: 1.5;
+            @include styleText($cl-white-0, $fs-2, $fw-0);
+        }
+        p {
+            line-height: 30px;
+            margin-bottom: $mg-5;
+        }
+        .skill__topleft {
+            padding: $pd-3 - 1;
+        }
+        .skill__progess {
+            padding: 0 $pd-3 - 1;
+            .massive-progress {
+                background: $cl-gray-2;
+                overflow: visible;
+                height: 20px;
+                margin: $mg-1 0 $mg-7;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-radius: 0;
+                box-shadow: none;
+                font-weight: $fw-1;
+                .percent1 {
+                    width: 80%;
+                }
+                .percent2 {
+                    width: 90%;
+                }
+                .percent3 {
+                    width: 75%;
+                }
+                .progress-bar {
+                    position: relative;
+                    overflow: visible;
+                    box-sizing: border-box;
+                    padding-top: 0;
+                    padding-left: $pd-1 - 2;
+                    text-align: left;
+                    color: $cl-dark-3;
+                    background-color: $cl-white-0;
+                    box-shadow: none;
+                    font-size: $fs-0 - 3;
+                    span {
+                        color: $cl-dark-3;
+                        background-color: $cl-gray-8 !important;
+                        position: absolute;
+                        top: -28px;
+                        right: -5px;
+                        height: 20px;
+                        padding: 0 $pd-0 + 3;
+                        text-align: center;
+                        border-radius: $br-4;
+                        line-height: 20px;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -2px;
+                            left: 15px;
+                            display: block;
+                            border-color: $cl-gray-8;
+                            background-color: $cl-gray-8;
+                            width: 5px;
+                            height: 5px;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dark-ovelay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        display: block;
+        background: $cl-dark-10;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .skill{
+        .skill__right{
+            height: 400px;
+        }
+    }
+}

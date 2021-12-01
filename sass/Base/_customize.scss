@@ -1,0 +1,25 @@
+.owl-theme {
+    .owl-nav.disabled + .owl-dots {
+        display: inline;
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+    }
+}
+.owl-theme{
+    .owl-dots{
+        .owl-dot{
+            span{
+                background-color: $cl-gray-10;
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .owl-dot.active span{
+            background-color: $cl-gray-6;
+        }
+        .owl-dot:hover span{
+            background-color: $cl-gray-6;
+        }
+    }
+}

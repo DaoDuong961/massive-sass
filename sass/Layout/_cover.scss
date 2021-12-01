@@ -1,0 +1,90 @@
+.cover {
+    position: relative;
+    #coverMassive {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+            .carousel-caption {
+                color: $cl-dark-0;
+                text-align: left;
+                position: absolute;
+                top: 43%;
+                left: 12%;
+                padding: 0;
+                h1 {
+                    margin-bottom: $mg-5;
+                    color: $cl-dark-0;
+                    font-weight: $fs-0;
+                    line-height: 1.5;
+                    letter-spacing: 2px;
+                    span {
+                        font-size: $fs-2;
+                    }
+                }
+                p {
+                    margin-bottom: $mg-5;
+                    color: $cl-gray-0;
+                    line-height: 30px;
+                }
+            }
+        }
+        .carousel-indicators {
+            margin-bottom: $mg-5;
+            align-items: center;
+            li {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin: $mg-0 - 3;
+                cursor: pointer;
+                background: $cl-dark-9;
+                border: 1px solid $cl-white-0;
+                border-radius: $br-2;
+                opacity: 1;
+            }
+            .active {
+                width: 10px;
+                height: 10px;
+                background: #fff;
+            }
+        }
+        .carouselControl{
+            width: 30%;
+            margin-top: 180px;
+            margin-bottom: 120px;
+            display: inline;
+            z-index: 50;
+        }
+        .carousel-control-prev {
+            &:hover {
+                cursor: url(../../img/arrow_left.png), auto;
+                
+            }
+        }
+        .carousel-control-next {
+            &:hover {
+                cursor: url(../../img/arrow_right.png), auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .cover{
+        #coverMassive {
+            .carousel-inner {
+                .carousel-caption {
+                    h1{
+                        font-size: $fs-2 + 8;
+                    }
+                }
+            }
+            .carouselControl{
+                margin: 0;
+            }
+        }
+    }
+}

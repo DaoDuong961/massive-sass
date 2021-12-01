@@ -1,0 +1,30 @@
+@import './Helper/mixin';
+@import './Helper/variables';
+
+@import './Base/reset';
+@import './Base/customize';
+
+@import './Layout/footer';
+@import './Layout/header';
+@import './Layout/cover';
+@import './Layout/featureDesign';
+@import './Layout/skill';
+@import './Layout/ourTeam';
+@import './Layout/portfolio';
+@import './Layout/service';
+@import './Layout/coreFeature';
+@import './Layout/funFactor';
+@import './Layout/blog';
+@import './Layout/feedback';
+@import './Layout/videoDemo';
+@import './Layout/imgPost';
+@import './Layout/price';
+@import './Layout/subcribe';
+@import './Layout/ourClient';
+@import './Layout/contact';
+@import './Layout/form';
+
+@import './Component/button';
+@import './Component/cover';
+@import './Component/heading';
+@import './Component/backToTop';

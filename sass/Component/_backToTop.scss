@@ -1,0 +1,28 @@
+.backToTop {
+    visibility: hidden;
+    opacity: 0;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: $cl-white-0;
+    background: $cl-dark-7;
+    line-height: 40px;
+    text-decoration: none;
+    z-index: 9999;
+    transform: translateY(70px);
+    transition: all .3s;
+    &:hover {
+        color: $cl-dark-3;
+        background-color: $cl-yellow-0;
+        text-decoration: none;
+    }
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
